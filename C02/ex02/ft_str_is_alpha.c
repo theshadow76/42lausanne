@@ -6,7 +6,7 @@
 /*   By: viwalker <marvin@42.fr>                       +#+                    */
 /*                                                    +#+                     */
 /*   Created: 2026/06/30 14:30:46 by viwalker       #+#    #+#                */
-/*   Updated: 2026/06/30 14:46:24 by viwalker       ########   odam.nl        */
+/*   Updated: 2026/06/30 14:55:45 by viwalker       ########   odam.nl        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,10 @@ int	ft_str_is_alpha(char *str)
 	res = 1;
 	if (str[i] == '\0')
 		return (1);
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
-		if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))
+		if ((str[i] >= 'a' && str[i] <= 'z')
+			|| (str[i] >= 'A' && str[i] <= 'Z'))
 			i++;
 		else
 			return (0);
